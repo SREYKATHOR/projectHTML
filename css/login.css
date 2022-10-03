@@ -1,0 +1,128 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  padding: 10px;
+}
+@media screen and (max-width: 428px) {
+  nav {
+    padding: 5px;
+  }
+}
+nav .group-logo {
+  display: flex;
+}
+@media screen and (max-width: 820px) {
+  nav .group-logo p {
+    display: none;
+  }
+}
+nav .group-nav-list ul {
+  display: flex;
+  list-style: none;
+}
+nav .group-nav-list ul li {
+  margin: 10px;
+}
+nav .group-nav-list ul li a {
+  text-decoration: none;
+  padding: 20px;
+}
+@media screen and (max-width: 428px) {
+  nav .group-nav-list ul li a {
+    padding: 5px;
+  }
+}
+nav .group-nav-list ul li a:hover {
+  background-color: #20b2ec;
+  cursor: pointer;
+}
+nav .group-nav-button button {
+  padding: 10px;
+  border: none;
+  color: white;
+  background-color: rgb(72, 27, 251);
+}
+nav .group-nav-button button a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px;
+}
+@media screen and (max-width: 428px) {
+  footer {
+    padding-right: 30px;
+  }
+}
+footer .group-footer-logo {
+  display: flex;
+  align-items: flex-end;
+}
+@media screen and (max-width: 820px) {
+  footer h4 {
+    display: none;
+  }
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+main .main-left {
+  width: 50%;
+  background-color: #20b2ec;
+  padding: 10px;
+}
+@media screen and (max-width: 820px) {
+  main .main-left {
+    width: 70%;
+    padding: 10%;
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 428px) {
+  main .main-left {
+    width: 100%;
+    padding-top: 10%;
+  }
+}
+main .main-left .main-logo {
+  display: flex;
+  justify-content: center;
+}
+main .main-left .group-container h2 {
+  display: flex;
+  justify-content: center;
+}
+main .main-left .group-container .main-or {
+  display: flex;
+  justify-content: center;
+}
+main .main-left .main-container {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+main .main-left .main-container input, main .main-left .main-container button {
+  padding: 10px;
+}
+main .main-left .create button {
+  padding: 10px;
+  border: none;
+  color: white;
+  background-color: rgb(72, 27, 251);
+}/*# sourceMappingURL=login.css.map */

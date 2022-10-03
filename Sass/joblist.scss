@@ -1,0 +1,82 @@
+@import "component/nav";
+@import "component/footer";
+@import "globle/veriable";
+@import "Mixin/minxin";
+.main-container{
+    .image{
+        @include responsive(tablet){
+            display: none;
+        }
+        background-image: url(../Photo/joblistbackground.jpg);
+        height: 100vh;
+        background-size: cover;
+        h1{
+            color: white;
+            font-size: 50px;
+            text-align: center;
+        }
+    }
+}
+.main-search{
+    background-color: $mainColor;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .search{
+        input{
+            @include responsive(tablet){
+                width: 100px;
+            }
+            padding: 10px;
+            width: 500px;
+        }
+        button{
+            @include button
+        }
+        .main-p{
+            @include responsive(tablet){
+                display: none;
+            }
+        }
+    }
+}
+.main-job-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .main-job{
+        @include responsive(tablet){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        padding: 10px;
+        margin: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        // background-color: $subColor;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .job{
+            text-align: center;
+        }
+        
+    }
+}
+.main-button{
+    display: flex;
+    justify-content: end;
+    margin-right: 125px;
+    @include responsive(tablet){
+        margin-right: 9%;
+    }
+    @include responsive(phone){
+        margin-right: 30px;
+    }
+    button{
+        @include button
+        
+    }
+}

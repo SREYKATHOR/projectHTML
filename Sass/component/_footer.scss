@@ -1,0 +1,22 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    @include responsive(phone){
+        padding-right: 30px;
+     }
+
+    // background-color: $mainColor;
+    padding: 10px;
+    .group-footer-logo{
+        display: flex;
+        align-items: flex-end;
+       
+    }
+    h4{
+        @include responsive(tablet){
+            display: none;
+        }
+    }
+}

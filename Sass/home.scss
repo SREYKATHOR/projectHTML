@@ -1,0 +1,112 @@
+@import "component/nav";
+@import "component/footer";
+@import "globle/veriable";
+@import "Mixin/minxin";
+.group-container{
+    .image{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 10px;
+        background-image: url(../Photo/homebackground.jpg);
+        background-size: cover;
+        height:80vh;
+        margin-top: 5%;
+        @include responsive(phone){
+            display: none;
+        }
+        h1{
+            color: white;
+            font-size: 50px;
+        }
+        .research{
+            input{
+                width: 500px;
+                padding: 10px;
+            }
+            button{
+                @include button
+            }
+        }
+        .group-job{
+            display: flex;
+            button{
+                margin: 10px;
+                
+            }
+        }
+    }
+}
+.selection-container{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    // background-color: $subColor;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .group-selection{
+        button{
+            margin: 5px;
+            width: 100px;
+            @include button
+        }
+    }
+}
+.group-position-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .group-positions{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: 5px;
+        padding: 10px;
+        @include responsive(phone){
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        .group-icon{
+            display: flex;
+            .group-information{
+                margin: 10px;
+                @include responsive(tablet){
+                    display: flex;
+                    flex-direction: column;
+                }
+                @include responsive(phone){
+                    display: flex;
+                    flex-direction: column;
+                }
+                
+                
+            }
+        }
+
+    }
+    .job-company{
+        @include responsive(phone){
+            text-align: center;
+        }
+    }
+    .main-download{
+        align-self:flex-end;
+        margin-right: 125px;
+        @include responsive(tablet){
+            margin-right: 9%;
+        }
+        @include responsive(phone){
+            margin-right: 30px;
+        
+        }
+        button{
+            
+            @include button
+            
+            
+        }
+    } 
+}

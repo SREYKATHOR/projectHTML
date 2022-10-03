@@ -1,0 +1,62 @@
+@import"../Mixin/minxin";
+@import"../globle/veriable";
+
+nav{
+    display: flex;
+    justify-content:space-around;
+    background-color: white;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    @include responsive(phone){
+        padding: 5px;
+    }
+    .group-logo{
+        display: flex;
+        p{
+            @include responsive(tablet){
+                display: none;
+            }
+        }
+       
+        
+    }
+    .group-nav-list{
+        ul{
+            display: flex;
+            list-style: none;
+            li{
+                margin: 10px;
+                a{
+                    @include responsive(phone){
+                        padding: 5px;
+                    }
+                    text-decoration: none;
+                    padding: 20px;
+                    &:hover{
+                        background-color: $subColor;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .group-nav-button{
+        button{
+            a{
+                text-decoration: none;
+                color:white;
+                
+            }
+            @include button
+            
+        }
+    }
+   
+
+}
+
+  
